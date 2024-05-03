@@ -95,7 +95,7 @@ body {
     color: #0000cd;
     font-family: "Montserrat", sans-serif;
  }
- .apresentacao__links__link:hover {
+ .apresentacao__links__navegacao:hover {
     color: #ff0000;
     border: 2PX solid #0000ff;
     background-color: #272727;
@@ -107,6 +107,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+.rodape {
+    padding: 10% 5%;
+}
+.rodape__menu {
+    display: flex;
+    gap: 20px;
+}
 .rodape__menu__link {
     background-color: #22d4fd;
     color: #000000;
@@ -115,12 +122,11 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     font-style: normal;
-    padding: 34px;    
+    
 }
 .rodape__menu__link:hover {
     color: #ff0000;
     border: 2PX solid #0000ff;
-    background-color: #272727;
     cursor: pointer;
  }
 
@@ -137,6 +143,12 @@ body {
     }
     .apresentacao__conteudo {
         width: auto;    
+    }
+    .rodape {
+        padding: 5%;
+    }
+    .rodape__menu {
+        justify-content: center;
     }
     .rodape__menu__link {
         font-size: 1.1rem;
