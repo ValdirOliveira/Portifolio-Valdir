@@ -4,11 +4,22 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --cor-principal: #007bff;  
+    --cor-secundaria: #A32AF7;
+    --cor-de-fundo: #f0fff0;
+    --link: #22D4FD;
+    --link-hover: #ff0000;
+    --border-hover: #0000ff;
+    --bck-gr: #272727;
+    /*--cor-de-fundo: #7fffd4;*/
+}
+
 body {
     /*height: 100vh; /*ajustando altura da tela*/
     box-sizing: border-box;/*controlando o Overflow com Box Sizing*/
-    background-color: #7fffd4;
-    color: #A32AF7
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-secundaria);
 }
 .cabecalho {
     padding: 2% 0% 0% 8%;
@@ -20,7 +31,7 @@ body {
 }
 
 .cabecalho__menu__link {
-    color: #22D4FD;
+    color: var(--link);
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
@@ -29,8 +40,8 @@ body {
     
 }
 .cabecalho__menu__link:hover {
-    color: #ff0000;
-    border: 2PX solid #0000ff;
+    color: var(--link-hover);
+    border: 2PX solid var(--border-hover);
     cursor: pointer;
 }
 .apresentacao {
@@ -46,7 +57,7 @@ body {
     /*height: 482px;*/
 }
 .apresentacao__conteudo__titulo {
-    color: #007bff;
+    color: var(--cor-principal);
     font-size: 2.25rem;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
@@ -57,7 +68,7 @@ body {
     /*usando Classe para marcar parte do <h1>*/
 }
 .apresentacao__conteudo__texto {
-    color: #007bff;
+    color: var(--cor-principal);
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -84,7 +95,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22d4fd;
+    border: 2px solid var(--link);
     width: 50%;
     text-align: center;
     border-radius: 8px;
@@ -96,8 +107,8 @@ body {
     font-family: "Montserrat", sans-serif;
  }
  .apresentacao__links__navegacao:hover {
-    color: #ff0000;
-    border: 2PX solid #0000ff;
+    color: var(--link-hover);
+    border: 2PX solid var(--border-hover);
     background-color: #272727;
     cursor: pointer;
  }
@@ -115,7 +126,7 @@ body {
     gap: 20px;
 }
 .rodape__menu__link {
-    background-color: #22d4fd;
+    background-color: var(--link);
     color: #000000;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -125,8 +136,8 @@ body {
     
 }
 .rodape__menu__link:hover {
-    color: #ff0000;
-    border: 2PX solid #0000ff;
+    color: var(--link-hover);
+    border: 2PX solid var(--border-hover);
     cursor: pointer;
  }
 
